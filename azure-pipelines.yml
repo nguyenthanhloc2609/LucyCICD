@@ -1,0 +1,57 @@
+# Starter pipeline 
+
+# Start with a minimal pipeline that you can customize to build and deploy your code. 
+
+# Add steps that build, run tests, deploy, and more: 
+
+# https://aka.ms/yaml 
+
+  
+
+trigger: 
+
+- master 
+
+- develop 
+
+  
+
+pool: 
+
+  vmImage: 'windows-latest' 
+
+  
+
+steps: 
+
+- task: PowerShell@2 
+
+  inputs: 
+
+    targetType: 'inline' 
+
+    script: | 
+
+       Copy-Item -Path * -Destination $(Build.ArtifactStagingDirectory) -Recurse 
+
+- task: CmdLine@2 
+
+  inputs: 
+
+    script: | 
+
+      echo Write your commands here 
+
+       
+
+      echo $(Build.ArtifactStagingDirectory) 
+
+- task: PublishBuildArtifacts@1 
+
+  inputs: 
+
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+
+    ArtifactName: 'source' 
+
+    publishLocation: 'Container' 
