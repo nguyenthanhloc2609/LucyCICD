@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC4_Verify page search title display correctly following keyword</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>Azure</productName>
+      <properties>
+         <entry>
+            <key>azure.testcase.ids</key>
+            <value>7</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <testCaseGuid>1579b563-f92d-4078-a5c3-ce1f5e26c731</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9acdf915-16c3-40d3-91cc-293d122ab3f3</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'java'</defaultValue>
+      <description></description>
+      <id>9acdf915-16c3-40d3-91cc-293d122ab3f3</id>
+      <masked>false</masked>
+      <name>keyword</name>
+   </variable>
+</TestCaseEntity>

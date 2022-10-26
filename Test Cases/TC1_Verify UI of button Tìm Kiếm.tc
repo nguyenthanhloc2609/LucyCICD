@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1_Verify UI of button Tìm Kiếm</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>Azure</productName>
+      <properties>
+         <entry>
+            <key>azure.testcase.ids</key>
+            <value>4</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <testCaseGuid>b2d3bc48-888d-4919-a747-fa3c4e259384</testCaseGuid>
+</TestCaseEntity>

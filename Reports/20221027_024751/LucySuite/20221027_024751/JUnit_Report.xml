@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="LucySuite" time="182.139" tests="4" failures="0" errors="0">
+   <testsuite name="LucySuite" tests="4" failures="0" errors="0" time="182.139" skipped="0" timestamp="2022-10-27 02:48:02" hostname="juvia - localhost" id="Test Suites/LucySuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/juvia/KatalonStudio/LucyCICD/Reports/20221027_024751/LucySuite/20221027_024751"/>
+         <property name="logFiles" value="/Users/juvia/KatalonStudio/LucyCICD/Reports/20221027_024751/LucySuite/20221027_024751/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="juvia - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.4.1.208"/>
+         <property name="browser" value="Firefox 104.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="be9666a0-9d96-40ac-85ea-9c712789f2fa"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/TC1_Verify UI of button Tìm Kiếm" time="103.382" classname="Test Cases/TC1_Verify UI of button Tìm Kiếm" status="PASSED">
+         <system-out><![CDATA[2022-10-27 02:48:02 - [TEST_CASE][PASSED] - Test Cases/TC1_Verify UI of button Tìm Kiếm: Test Cases/TC1_Verify UI of button Tìm Kiếm
+
+2022-10-27 02:48:03 - [TEST_STEP][PASSED] - openBrowser(TIKI_RAW_URL): Browser is opened with url: 'https://tiki.vn/'
+
+2022-10-27 02:48:03 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2022-10-27 02:48:04 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-10-27 02:48:11 - [MESSAGE][PASSED] - Browser is opened with url: 'https://tiki.vn/'
+
+2022-10-27 02:48:11 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Tiki_search_Block/btn_search"), 10): Object 'Object Repository/Tiki_search_Block/btn_search' is present
+
+2022-10-27 02:48:15 - [MESSAGE][PASSED] - Object 'Object Repository/Tiki_search_Block/btn_search' is present
+
+2022-10-27 02:48:15 - [TEST_STEP][PASSED] - text = getText(findTestObject("Tiki_search_Block/btn_search")): Text of object 'Object Repository/Tiki_search_Block/btn_search' is: 'Tìm Kiếm'
+
+2022-10-27 02:48:45 - [MESSAGE][PASSED] - Text of object 'Object Repository/Tiki_search_Block/btn_search' is: 'Tìm Kiếm'
+
+2022-10-27 02:48:45 - [TEST_STEP][PASSED] - realText = "Tìm Kiếm": null
+
+2022-10-27 02:48:45 - [TEST_STEP][PASSED] - verifyMatch(text, realText, true): Actual text 'Tìm Kiếm' and expected text 'Tìm Kiếm' are matched  using regular expression
+
+2022-10-27 02:48:45 - [MESSAGE][PASSED] - Actual text 'Tìm Kiếm' and expected text 'Tìm Kiếm' are matched  using regular expression
+
+2022-10-27 02:48:45 - [TEST_STEP][PASSED] - color = getCSSValue(findTestObject("Tiki_search_Block/btn_search"), "color"): Get CSS 'color' value on 'Object Repository/Tiki_search_Block/btn_search' successfully: 'rgb(255, 255, 255)'.
+
+2022-10-27 02:49:15 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Tiki_search_Block/btn_search' successfully: 'rgb(255, 255, 255)'.
+
+2022-10-27 02:49:15 - [TEST_STEP][PASSED] - colorHex = FinalKeywords.convertRGBAStringToHex(color): FinalKeywords.convertRGBAStringToHex is PASSED
+
+2022-10-27 02:49:15 - [MESSAGE][PASSED] - FinalKeywords.convertRGBAStringToHex is PASSED
+
+2022-10-27 02:49:15 - [TEST_STEP][PASSED] - realColor = "#ffffff": null
+
+2022-10-27 02:49:15 - [TEST_STEP][PASSED] - verifyMatch(colorHex, realColor, true): Actual text '#ffffff' and expected text '#ffffff' are matched  using regular expression
+
+2022-10-27 02:49:15 - [MESSAGE][PASSED] - Actual text '#ffffff' and expected text '#ffffff' are matched  using regular expression
+
+2022-10-27 02:49:15 - [TEST_STEP][PASSED] - bgr = getCSSValue(findTestObject("Tiki_search_Block/btn_search"), "background"): Get CSS 'background' value on 'Object Repository/Tiki_search_Block/btn_search' successfully: 'rgb(13, 92, 182) none repeat scroll 0% 0%'.
+
+2022-10-27 02:49:46 - [MESSAGE][PASSED] - Get CSS 'background' value on 'Object Repository/Tiki_search_Block/btn_search' successfully: 'rgb(13, 92, 182) none repeat scroll 0% 0%'.
+
+2022-10-27 02:49:46 - [TEST_STEP][PASSED] - rgbBrgColor = FinalKeywords.getRGBString(bgr): FinalKeywords.getRGBString is PASSED
+
+2022-10-27 02:49:46 - [MESSAGE][PASSED] - FinalKeywords.getRGBString is PASSED
+
+2022-10-27 02:49:46 - [TEST_STEP][PASSED] - colorBgrHex = FinalKeywords.convertRGBStringToHex(rgbBrgColor): FinalKeywords.convertRGBStringToHex is PASSED
+
+2022-10-27 02:49:46 - [MESSAGE][PASSED] - FinalKeywords.convertRGBStringToHex is PASSED
+
+2022-10-27 02:49:46 - [TEST_STEP][PASSED] - realBgr = "#0d5cb6": null
+
+2022-10-27 02:49:46 - [TEST_STEP][PASSED] - verifyMatch(colorBgrHex, realBgr, true): Actual text '#0d5cb6' and expected text '#0d5cb6' are matched  using regular expression
+
+2022-10-27 02:49:46 - [MESSAGE][PASSED] - Actual text '#0d5cb6' and expected text '#0d5cb6' are matched  using regular expression]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC2 - Verify options list on the category page displays correctly" time="10.968" classname="Test Cases/TC2 - Verify options list on the category page displays correctly" status="PASSED">
+         <system-out><![CDATA[2022-10-27 02:49:46 - [TEST_CASE][PASSED] - Test Cases/TC2 - Verify options list on the category page displays correctly: Test Cases/TC2 - Verify options list on the category page displays correctly
+
+2022-10-27 02:49:46 - [TEST_STEP][PASSED] - openBrowser(TIKI_CATEGORY_DEVIDE_URL): Browser is opened with url: 'https://tiki.vn/thiet-bi-kts-phu-kien-so/c1815'
+
+2022-10-27 02:49:46 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-10-27 02:49:47 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2022-10-27 02:49:47 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-10-27 02:49:54 - [MESSAGE][PASSED] - Browser is opened with url: 'https://tiki.vn/thiet-bi-kts-phu-kien-so/c1815'
+
+2022-10-27 02:49:54 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2022-10-27 02:49:54 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-10-27 02:49:54 - [TEST_STEP][PASSED] - expectList = ["Thiết Bị Âm Thanh và Phụ Kiện", "Thiết Bị Chơi Game và Phụ Kiện", "Thiết Bị Đeo Thông Minh và Phụ Kiện", "Thiết Bị Thông Minh và Linh Kiện Điện Tử", "Phụ Kiện Điện Thoại và Máy Tính Bảng", "Phụ kiện máy tính và Laptop"]: null
+
+2022-10-27 02:49:54 - [TEST_STEP][PASSED] - actualList = FinalKeywords.getTextFromList(findTestObject("Tiki_Devide_Category/list_category")): FinalKeywords.getTextFromList is PASSED
+
+2022-10-27 02:49:57 - [MESSAGE][PASSED] - FinalKeywords.getTextFromList is PASSED
+
+2022-10-27 02:49:57 - [TEST_STEP][PASSED] - kms.turing.katalon.plugins.assertj.ListAssert.equalsWithOrder(actualList, expectList, "contains"): These two lists are equal
+
+2022-10-27 02:49:57 - [MESSAGE][INFO] - contains
+
+2022-10-27 02:49:57 - [MESSAGE][PASSED] - These two lists are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC3 - Verify search result products should contain searched keyword" time="23.669" classname="Test Cases/TC3 - Verify search result products should contain searched keyword" status="PASSED">
+         <system-out><![CDATA[2022-10-27 02:49:57 - [TEST_CASE][PASSED] - Test Cases/TC3 - Verify search result products should contain searched keyword: Test Cases/TC3 - Verify search result products should contain searched keyword
+
+2022-10-27 02:49:57 - [TEST_STEP][PASSED] - openBrowser(AMAZON_RAW_URL): Browser is opened with url: 'https://www.amazon.com/ref=nav_logo'
+
+2022-10-27 02:49:57 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-10-27 02:49:58 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2022-10-27 02:49:58 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-10-27 02:50:06 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.amazon.com/ref=nav_logo'
+
+2022-10-27 02:50:06 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Amazon_Search_Block/tbx_search_box"), keyword): Keys 'selenium' sent to object: 'Object Repository/Amazon_Search_Block/tbx_search_box'
+
+2022-10-27 02:50:10 - [MESSAGE][PASSED] - Keys 'selenium' sent to object: 'Object Repository/Amazon_Search_Block/tbx_search_box'
+
+2022-10-27 02:50:10 - [TEST_STEP][PASSED] - click(findTestObject("Amazon_Search_Block/btn_search")): Object: 'Object Repository/Amazon_Search_Block/btn_search' is clicked on
+
+2022-10-27 02:50:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Amazon_Search_Block/btn_search' is clicked on
+
+2022-10-27 02:50:18 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Amazon_Result_Page/title_result_page"), 10): Object 'Object Repository/Amazon_Result_Page/title_result_page' is present
+
+2022-10-27 02:50:18 - [MESSAGE][PASSED] - Object 'Object Repository/Amazon_Result_Page/title_result_page' is present
+
+2022-10-27 02:50:18 - [TEST_STEP][PASSED] - titleResult = FinalKeywords.getTextFromList(findTestObject("Amazon_Result_Page/txt_result_list_title")): FinalKeywords.getTextFromList is PASSED
+
+2022-10-27 02:50:20 - [MESSAGE][PASSED] - FinalKeywords.getTextFromList is PASSED
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - println(titleResult): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - for ([i = 0, i < 5, (i++)]): The tested text 'nowfoodsselenium200mcgvcaps180ct' contains 'selenium'
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - println(titleResult[i]): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - titleNoCommon = titleResult[i].replaceAll(",", " "): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - titleSplit = titleNoCommon.split(): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - title = join("", titleSplit).toLowerCase(): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - println(title): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - kms.turing.katalon.plugins.assertj.StringAssert.contains(title, keyword, false, "contains", STOP_ON_FAILURE): The tested text '365bywholefoodsmarketselenium100mcg120tablets' contains 'selenium'
+
+2022-10-27 02:50:20 - [MESSAGE][INFO] - contains with case-sensitive: false
+
+2022-10-27 02:50:20 - [MESSAGE][PASSED] - The tested text '365bywholefoodsmarketselenium100mcg120tablets' contains 'selenium'
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - println(titleResult[i]): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - titleNoCommon = titleResult[i].replaceAll(",", " "): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - titleSplit = titleNoCommon.split(): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - title = join("", titleSplit).toLowerCase(): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - println(title): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - kms.turing.katalon.plugins.assertj.StringAssert.contains(title, keyword, false, "contains", STOP_ON_FAILURE): The tested text 'bronsonselenium200mcgforimmunesystemthyroidprostateandhearthealth–yeastfreechelatedaminoacidcomplex-essentialtracemineralwithsuperiorabsorption250vegetariancapsules' contains 'selenium'
+
+2022-10-27 02:50:20 - [MESSAGE][INFO] - contains with case-sensitive: false
+
+2022-10-27 02:50:20 - [MESSAGE][PASSED] - The tested text 'bronsonselenium200mcgforimmunesystemthyroidprostateandhearthealth–yeastfreechelatedaminoacidcomplex-essentialtracemineralwithsuperiorabsorption250vegetariancapsules' contains 'selenium'
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - println(titleResult[i]): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - titleNoCommon = titleResult[i].replaceAll(",", " "): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - titleSplit = titleNoCommon.split(): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - title = join("", titleSplit).toLowerCase(): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - println(title): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - kms.turing.katalon.plugins.assertj.StringAssert.contains(title, keyword, false, "contains", STOP_ON_FAILURE): The tested text 'bronsonselenium200mcgimmune&antioxidantsupportessentialmineral250vegetariantablets' contains 'selenium'
+
+2022-10-27 02:50:20 - [MESSAGE][INFO] - contains with case-sensitive: false
+
+2022-10-27 02:50:20 - [MESSAGE][PASSED] - The tested text 'bronsonselenium200mcgimmune&antioxidantsupportessentialmineral250vegetariantablets' contains 'selenium'
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - println(titleResult[i]): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - titleNoCommon = titleResult[i].replaceAll(",", " "): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - titleSplit = titleNoCommon.split(): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - title = join("", titleSplit).toLowerCase(): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - println(title): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - kms.turing.katalon.plugins.assertj.StringAssert.contains(title, keyword, false, "contains", STOP_ON_FAILURE): The tested text 'pureencapsulationsselenium(selenomethionine)|antioxidantsupplementforimmunesystemprostatecollagenandthyroidsupport*|60capsules' contains 'selenium'
+
+2022-10-27 02:50:20 - [MESSAGE][INFO] - contains with case-sensitive: false
+
+2022-10-27 02:50:20 - [MESSAGE][PASSED] - The tested text 'pureencapsulationsselenium(selenomethionine)|antioxidantsupplementforimmunesystemprostatecollagenandthyroidsupport*|60capsules' contains 'selenium'
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - println(titleResult[i]): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - titleNoCommon = titleResult[i].replaceAll(",", " "): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - titleSplit = titleNoCommon.split(): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - title = join("", titleSplit).toLowerCase(): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - println(title): null
+
+2022-10-27 02:50:20 - [TEST_STEP][PASSED] - kms.turing.katalon.plugins.assertj.StringAssert.contains(title, keyword, false, "contains", STOP_ON_FAILURE): The tested text 'nowfoodsselenium200mcgvcaps180ct' contains 'selenium'
+
+2022-10-27 02:50:20 - [MESSAGE][INFO] - contains with case-sensitive: false
+
+2022-10-27 02:50:20 - [MESSAGE][PASSED] - The tested text 'nowfoodsselenium200mcgvcaps180ct' contains 'selenium']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC4_Verify page search title display correctly following keyword" time="43.657" classname="Test Cases/TC4_Verify page search title display correctly following keyword" status="PASSED">
+         <system-out><![CDATA[2022-10-27 02:50:20 - [TEST_CASE][PASSED] - Test Cases/TC4_Verify page search title display correctly following keyword: Test Cases/TC4_Verify page search title display correctly following keyword
+
+2022-10-27 02:50:21 - [TEST_STEP][PASSED] - openBrowser(TIKI_RAW_URL): Browser is opened with url: 'https://tiki.vn/'
+
+2022-10-27 02:50:21 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-10-27 02:50:22 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2022-10-27 02:50:22 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-10-27 02:50:28 - [MESSAGE][PASSED] - Browser is opened with url: 'https://tiki.vn/'
+
+2022-10-27 02:50:28 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Tiki_Search_Block/tbx_search_box"), keyword): Keys 'java' sent to object: 'Object Repository/Tiki_Search_Block/tbx_search_box'
+
+2022-10-27 02:50:30 - [MESSAGE][PASSED] - Keys 'java' sent to object: 'Object Repository/Tiki_Search_Block/tbx_search_box'
+
+2022-10-27 02:50:30 - [TEST_STEP][PASSED] - click(findTestObject("Tiki_Search_Block/btn_search")): Object: 'Object Repository/Tiki_Search_Block/btn_search' is clicked on
+
+2022-10-27 02:51:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Tiki_Search_Block/btn_search' is clicked on
+
+2022-10-27 02:51:01 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Tiki_Result_Page/title_result_page"), 10): Object 'Object Repository/Tiki_Result_Page/title_result_page' is visible
+
+2022-10-27 02:51:04 - [MESSAGE][PASSED] - Object 'Object Repository/Tiki_Result_Page/title_result_page' is visible
+
+2022-10-27 02:51:04 - [TEST_STEP][PASSED] - result_title = FinalKeywords.getTextOfElement(findTestObject("Tiki_Result_Page/title_result_page")): FinalKeywords.getTextOfElement is PASSED
+
+2022-10-27 02:51:04 - [MESSAGE][PASSED] - FinalKeywords.getTextOfElement is PASSED
+
+2022-10-27 02:51:04 - [TEST_STEP][PASSED] - println(result_title): null
+
+2022-10-27 02:51:04 - [TEST_STEP][PASSED] - kms.turing.katalon.plugins.assertj.StringAssert.contains(result_title, keyword, false, "contains", STOP_ON_FAILURE): The tested text 'Kết quả tìm kiếm cho `java`' contains 'java'
+
+2022-10-27 02:51:04 - [MESSAGE][INFO] - contains with case-sensitive: false
+
+2022-10-27 02:51:04 - [MESSAGE][PASSED] - The tested text 'Kết quả tìm kiếm cho `java`' contains 'java']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-10-27 02:48:02 - [TEST_SUITE][PASSED] - LucySuite: Test Cases/TC4_Verify page search title display correctly following keyword]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

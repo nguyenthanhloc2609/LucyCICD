@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC3 - Verify search result products should contain searched keyword</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>Azure</productName>
+      <properties>
+         <entry>
+            <key>azure.testcase.ids</key>
+            <value>6</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <testCaseGuid>85a73925-df53-4851-a367-ead6e9e27f49</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0055b6c3-5615-4807-9d4a-2e6b3d83b032</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'selenium'</defaultValue>
+      <description></description>
+      <id>0055b6c3-5615-4807-9d4a-2e6b3d83b032</id>
+      <masked>false</masked>
+      <name>keyword</name>
+   </variable>
+</TestCaseEntity>

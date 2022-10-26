@@ -1,0 +1,43 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+LucySuite,Chrome 106.0.0.0,,,2022-10-26 10:39:27,2022-10-26 10:40:43,1m - 15.687s,PASSED
+,,,,,,,
+Test Cases/TC1_Verify UI of button Tìm Kiếm,Chrome 106.0.0.0,,,2022-10-26 10:39:27,2022-10-26 10:40:05,37.434s,PASSED
+openBrowser(TIKI_RAW_URL),Chrome 106.0.0.0,,,2022-10-26 10:39:28,2022-10-26 10:39:32,4.519s,PASSED
+"verifyElementPresent(findTestObject(""Tiki_search_Block/btn_search""), 10)",Chrome 106.0.0.0,,,2022-10-26 10:39:32,2022-10-26 10:39:33,1.458s,PASSED
+"text = getText(findTestObject(""Tiki_search_Block/btn_search""))",Chrome 106.0.0.0,,,2022-10-26 10:39:33,2022-10-26 10:39:34,0.439s,PASSED
+"realText = ""Tìm Kiếm""",Chrome 106.0.0.0,,,2022-10-26 10:39:34,2022-10-26 10:39:34,0.001s,PASSED
+"verifyMatch(text, realText, true)",Chrome 106.0.0.0,,,2022-10-26 10:39:34,2022-10-26 10:39:34,0.029s,PASSED
+"color = getCSSValue(findTestObject(""Tiki_search_Block/btn_search""), ""color"")",Chrome 106.0.0.0,,,2022-10-26 10:39:34,2022-10-26 10:39:34,0.420s,PASSED
+colorHex = FinalKeywords.convertRGBAStringToHex(color),Chrome 106.0.0.0,,,2022-10-26 10:39:34,2022-10-26 10:39:34,0.021s,PASSED
+"realColor = ""#ffffff""",Chrome 106.0.0.0,,,2022-10-26 10:39:34,2022-10-26 10:39:34,0.000s,PASSED
+"verifyMatch(colorHex, realColor, true)",Chrome 106.0.0.0,,,2022-10-26 10:39:34,2022-10-26 10:39:34,0.003s,PASSED
+"bgr = getCSSValue(findTestObject(""Tiki_search_Block/btn_search""), ""background"")",Chrome 106.0.0.0,,,2022-10-26 10:39:34,2022-10-26 10:40:05,30.132s,PASSED
+rgbBrgColor = FinalKeywords.getRGBString(bgr),Chrome 106.0.0.0,,,2022-10-26 10:40:05,2022-10-26 10:40:05,0.003s,PASSED
+colorBgrHex = FinalKeywords.convertRGBStringToHex(rgbBrgColor),Chrome 106.0.0.0,,,2022-10-26 10:40:05,2022-10-26 10:40:05,0.001s,PASSED
+"realBgr = ""#0d5cb6""",Chrome 106.0.0.0,,,2022-10-26 10:40:05,2022-10-26 10:40:05,0.001s,PASSED
+"verifyMatch(colorBgrHex, realBgr, true)",Chrome 106.0.0.0,,,2022-10-26 10:40:05,2022-10-26 10:40:05,0.003s,PASSED
+,,,,,,,
+Test Cases/TC2 - Verify options list on the category page displays correctly,Chrome 106.0.0.0,,,2022-10-26 10:40:05,2022-10-26 10:40:12,7.156s,PASSED
+openBrowser(TIKI_CATEGORY_DEVIDE_URL),Chrome 106.0.0.0,,,2022-10-26 10:40:05,2022-10-26 10:40:10,5.257s,PASSED
+waitForPageLoad(10),Chrome 106.0.0.0,,,2022-10-26 10:40:10,2022-10-26 10:40:10,0.330s,PASSED
+"expectList = [""Thiết Bị Âm Thanh và Phụ Kiện"", ""Thiết Bị Chơi Game và Phụ Kiện"", ""Thiết Bị Đeo Thông Minh và Phụ Kiện"", ""Thiết Bị Thông Minh và Linh Kiện Điện Tử"", ""Phụ Kiện Điện Thoại và Máy Tính Bảng"", ""Phụ kiện máy tính và Laptop""]",Chrome 106.0.0.0,,,2022-10-26 10:40:10,2022-10-26 10:40:10,0.001s,PASSED
+"actualList = FinalKeywords.getTextFromList(findTestObject(""Tiki_Devide_Category/list_category""))",Chrome 106.0.0.0,,,2022-10-26 10:40:10,2022-10-26 10:40:12,1.224s,PASSED
+"kms.turing.katalon.plugins.assertj.ListAssert.equalsWithOrder(actualList, expectList, ""contains"")",Chrome 106.0.0.0,,,2022-10-26 10:40:12,2022-10-26 10:40:12,0.073s,PASSED
+,,,,,,,
+Test Cases/TC3 - Verify search result products should contain searched keyword,Chrome 106.0.0.0,,,2022-10-26 10:40:12,2022-10-26 10:40:25,13.563s,PASSED
+openBrowser(AMAZON_RAW_URL),Chrome 106.0.0.0,,,2022-10-26 10:40:12,2022-10-26 10:40:16,4.112s,PASSED
+"sendKeys(findTestObject(""Amazon_Search_Block/tbx_search_box""), keyword)",Chrome 106.0.0.0,,,2022-10-26 10:40:16,2022-10-26 10:40:18,1.157s,PASSED
+"click(findTestObject(""Amazon_Search_Block/btn_search""))",Chrome 106.0.0.0,,,2022-10-26 10:40:18,2022-10-26 10:40:23,5.847s,PASSED
+"waitForElementPresent(findTestObject(""Amazon_Result_Page/title_result_page""), 10)",Chrome 106.0.0.0,,,2022-10-26 10:40:23,2022-10-26 10:40:24,0.722s,PASSED
+"titleResult = FinalKeywords.getTextFromList(findTestObject(""Amazon_Result_Page/txt_result_list_title""))",Chrome 106.0.0.0,,,2022-10-26 10:40:24,2022-10-26 10:40:25,1.130s,PASSED
+println(titleResult),Chrome 106.0.0.0,,,2022-10-26 10:40:25,2022-10-26 10:40:25,0.003s,PASSED
+"for ([i = 0, i < 5, (i++)])",Chrome 106.0.0.0,,,2022-10-26 10:40:25,2022-10-26 10:40:25,0.050s,PASSED
+,,,,,,,
+Test Cases/TC4_Verify page search title display correctly following keyword,Chrome 106.0.0.0,,,2022-10-26 10:40:25,2022-10-26 10:40:43,17.197s,PASSED
+openBrowser(TIKI_RAW_URL),Chrome 106.0.0.0,,,2022-10-26 10:40:26,2022-10-26 10:40:30,4.146s,PASSED
+"sendKeys(findTestObject(""Tiki_Search_Block/tbx_search_box""), keyword)",Chrome 106.0.0.0,,,2022-10-26 10:40:30,2022-10-26 10:40:31,1.556s,PASSED
+"click(findTestObject(""Tiki_Search_Block/btn_search""))",Chrome 106.0.0.0,,,2022-10-26 10:40:31,2022-10-26 10:40:32,0.915s,PASSED
+"waitForElementVisible(findTestObject(""Tiki_Result_Page/title_result_page""), 10)",Chrome 106.0.0.0,,,2022-10-26 10:40:32,2022-10-26 10:40:42,10.008s,PASSED
+"result_title = FinalKeywords.getTextOfElement(findTestObject(""Tiki_Result_Page/title_result_page""))",Chrome 106.0.0.0,,,2022-10-26 10:40:42,2022-10-26 10:40:42,0.308s,PASSED
+println(result_title),Chrome 106.0.0.0,,,2022-10-26 10:40:42,2022-10-26 10:40:42,0.000s,PASSED
+"kms.turing.katalon.plugins.assertj.StringAssert.contains(result_title, keyword, false, ""contains"", STOP_ON_FAILURE)",Chrome 106.0.0.0,,,2022-10-26 10:40:42,2022-10-26 10:40:42,0.002s,PASSED

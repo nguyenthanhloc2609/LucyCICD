@@ -1,0 +1,43 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+LucySuite,Firefox 104.0,,,2022-10-27 02:48:02,2022-10-27 02:51:04,3m - 2.139s,PASSED
+,,,,,,,
+Test Cases/TC1_Verify UI of button Tìm Kiếm,Firefox 104.0,,,2022-10-27 02:48:02,2022-10-27 02:49:46,1m - 43.382s,PASSED
+openBrowser(TIKI_RAW_URL),Firefox 104.0,,,2022-10-27 02:48:03,2022-10-27 02:48:11,8.581s,PASSED
+"verifyElementPresent(findTestObject(""Tiki_search_Block/btn_search""), 10)",Firefox 104.0,,,2022-10-27 02:48:11,2022-10-27 02:48:15,3.496s,PASSED
+"text = getText(findTestObject(""Tiki_search_Block/btn_search""))",Firefox 104.0,,,2022-10-27 02:48:15,2022-10-27 02:48:45,30.197s,PASSED
+"realText = ""Tìm Kiếm""",Firefox 104.0,,,2022-10-27 02:48:45,2022-10-27 02:48:45,0.002s,PASSED
+"verifyMatch(text, realText, true)",Firefox 104.0,,,2022-10-27 02:48:45,2022-10-27 02:48:45,0.030s,PASSED
+"color = getCSSValue(findTestObject(""Tiki_search_Block/btn_search""), ""color"")",Firefox 104.0,,,2022-10-27 02:48:45,2022-10-27 02:49:15,30.154s,PASSED
+colorHex = FinalKeywords.convertRGBAStringToHex(color),Firefox 104.0,,,2022-10-27 02:49:15,2022-10-27 02:49:15,0.040s,PASSED
+"realColor = ""#ffffff""",Firefox 104.0,,,2022-10-27 02:49:15,2022-10-27 02:49:15,0.015s,PASSED
+"verifyMatch(colorHex, realColor, true)",Firefox 104.0,,,2022-10-27 02:49:15,2022-10-27 02:49:15,0.019s,PASSED
+"bgr = getCSSValue(findTestObject(""Tiki_search_Block/btn_search""), ""background"")",Firefox 104.0,,,2022-10-27 02:49:15,2022-10-27 02:49:46,30.256s,PASSED
+rgbBrgColor = FinalKeywords.getRGBString(bgr),Firefox 104.0,,,2022-10-27 02:49:46,2022-10-27 02:49:46,0.005s,PASSED
+colorBgrHex = FinalKeywords.convertRGBStringToHex(rgbBrgColor),Firefox 104.0,,,2022-10-27 02:49:46,2022-10-27 02:49:46,0.004s,PASSED
+"realBgr = ""#0d5cb6""",Firefox 104.0,,,2022-10-27 02:49:46,2022-10-27 02:49:46,0.001s,PASSED
+"verifyMatch(colorBgrHex, realBgr, true)",Firefox 104.0,,,2022-10-27 02:49:46,2022-10-27 02:49:46,0.012s,PASSED
+,,,,,,,
+Test Cases/TC2 - Verify options list on the category page displays correctly,Firefox 104.0,,,2022-10-27 02:49:46,2022-10-27 02:49:57,10.968s,PASSED
+openBrowser(TIKI_CATEGORY_DEVIDE_URL),Firefox 104.0,,,2022-10-27 02:49:46,2022-10-27 02:49:54,7.442s,PASSED
+waitForPageLoad(10),Firefox 104.0,,,2022-10-27 02:49:54,2022-10-27 02:49:54,0.577s,PASSED
+"expectList = [""Thiết Bị Âm Thanh và Phụ Kiện"", ""Thiết Bị Chơi Game và Phụ Kiện"", ""Thiết Bị Đeo Thông Minh và Phụ Kiện"", ""Thiết Bị Thông Minh và Linh Kiện Điện Tử"", ""Phụ Kiện Điện Thoại và Máy Tính Bảng"", ""Phụ kiện máy tính và Laptop""]",Firefox 104.0,,,2022-10-27 02:49:54,2022-10-27 02:49:54,0.001s,PASSED
+"actualList = FinalKeywords.getTextFromList(findTestObject(""Tiki_Devide_Category/list_category""))",Firefox 104.0,,,2022-10-27 02:49:54,2022-10-27 02:49:57,2.222s,PASSED
+"kms.turing.katalon.plugins.assertj.ListAssert.equalsWithOrder(actualList, expectList, ""contains"")",Firefox 104.0,,,2022-10-27 02:49:57,2022-10-27 02:49:57,0.042s,PASSED
+,,,,,,,
+Test Cases/TC3 - Verify search result products should contain searched keyword,Firefox 104.0,,,2022-10-27 02:49:57,2022-10-27 02:50:20,23.669s,PASSED
+openBrowser(AMAZON_RAW_URL),Firefox 104.0,,,2022-10-27 02:49:57,2022-10-27 02:50:06,8.627s,PASSED
+"sendKeys(findTestObject(""Amazon_Search_Block/tbx_search_box""), keyword)",Firefox 104.0,,,2022-10-27 02:50:06,2022-10-27 02:50:10,4.857s,PASSED
+"click(findTestObject(""Amazon_Search_Block/btn_search""))",Firefox 104.0,,,2022-10-27 02:50:10,2022-10-27 02:50:18,7.029s,PASSED
+"waitForElementPresent(findTestObject(""Amazon_Result_Page/title_result_page""), 10)",Firefox 104.0,,,2022-10-27 02:50:18,2022-10-27 02:50:18,0.730s,PASSED
+"titleResult = FinalKeywords.getTextFromList(findTestObject(""Amazon_Result_Page/txt_result_list_title""))",Firefox 104.0,,,2022-10-27 02:50:18,2022-10-27 02:50:20,1.991s,PASSED
+println(titleResult),Firefox 104.0,,,2022-10-27 02:50:20,2022-10-27 02:50:20,0.005s,PASSED
+"for ([i = 0, i < 5, (i++)])",Firefox 104.0,,,2022-10-27 02:50:20,2022-10-27 02:50:20,0.098s,PASSED
+,,,,,,,
+Test Cases/TC4_Verify page search title display correctly following keyword,Firefox 104.0,,,2022-10-27 02:50:20,2022-10-27 02:51:04,43.657s,PASSED
+openBrowser(TIKI_RAW_URL),Firefox 104.0,,,2022-10-27 02:50:21,2022-10-27 02:50:28,7.363s,PASSED
+"sendKeys(findTestObject(""Tiki_Search_Block/tbx_search_box""), keyword)",Firefox 104.0,,,2022-10-27 02:50:28,2022-10-27 02:50:30,2.297s,PASSED
+"click(findTestObject(""Tiki_Search_Block/btn_search""))",Firefox 104.0,,,2022-10-27 02:50:30,2022-10-27 02:51:01,30.501s,PASSED
+"waitForElementVisible(findTestObject(""Tiki_Result_Page/title_result_page""), 10)",Firefox 104.0,,,2022-10-27 02:51:01,2022-10-27 02:51:04,2.823s,PASSED
+"result_title = FinalKeywords.getTextOfElement(findTestObject(""Tiki_Result_Page/title_result_page""))",Firefox 104.0,,,2022-10-27 02:51:04,2022-10-27 02:51:04,0.335s,PASSED
+println(result_title),Firefox 104.0,,,2022-10-27 02:51:04,2022-10-27 02:51:04,0.001s,PASSED
+"kms.turing.katalon.plugins.assertj.StringAssert.contains(result_title, keyword, false, ""contains"", STOP_ON_FAILURE)",Firefox 104.0,,,2022-10-27 02:51:04,2022-10-27 02:51:04,0.004s,PASSED

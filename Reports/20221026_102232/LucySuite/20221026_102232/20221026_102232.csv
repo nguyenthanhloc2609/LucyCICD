@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+LucySuite,,,,2022-10-26 10:22:43,2022-10-26 10:22:45,1.759s,ERROR
+,,,,,,,
+Test Cases/TC1_Verify UI of button Tìm Kiếm,,,,2022-10-26 10:22:44,2022-10-26 10:22:44,0.022s,ERROR
+openBrowser(TIKI_RAW_URL),,,,2022-10-26 10:22:44,2022-10-26 10:22:44,0.005s,ERROR
+,,,,,,,
+Test Cases/TC2 - Verify options list on the category page displays correctly,,,,2022-10-26 10:22:44,2022-10-26 10:22:44,0.012s,ERROR
+openBrowser(TIKI_CATEGORY_DEVIDE_URL),,,,2022-10-26 10:22:44,2022-10-26 10:22:44,0.002s,ERROR
+,,,,,,,
+Test Cases/TC3 - Verify search result products should contain searched keyword,,,,2022-10-26 10:22:45,2022-10-26 10:22:45,0.017s,ERROR
+openBrowser(AMAZON_RAW_URL),,,,2022-10-26 10:22:45,2022-10-26 10:22:45,0.003s,ERROR
+,,,,,,,
+Test Cases/TC4_Verify page search title display correctly following keyword,,,,2022-10-26 10:22:45,2022-10-26 10:22:45,0.015s,ERROR
+openBrowser(TIKI_RAW_URL),,,,2022-10-26 10:22:45,2022-10-26 10:22:45,0.003s,ERROR

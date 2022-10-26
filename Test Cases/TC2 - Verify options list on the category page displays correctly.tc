@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2 - Verify options list on the category page displays correctly</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>Azure</productName>
+      <properties>
+         <entry>
+            <key>azure.testcase.ids</key>
+            <value>5</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <testCaseGuid>1156dc15-1b14-4f03-86ff-de892bcc481f</testCaseGuid>
+</TestCaseEntity>
