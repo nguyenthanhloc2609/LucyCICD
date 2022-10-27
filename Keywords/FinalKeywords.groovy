@@ -20,7 +20,6 @@ import internal.GlobalVariable
 import org.openqa.selenium.WebElement
 
 public class FinalKeywords {
-
 	@Keyword
 	def  String convertRGBAStringToHex(String colorRGB) {
 		String[] hexValue = colorRGB.replace("rgb(", "").replace(")", "").split(",")
