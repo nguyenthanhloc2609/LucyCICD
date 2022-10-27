@@ -33,3 +33,4 @@ String rgbBrgColor = CustomKeywords.'FinalKeywords.getRGBString'(bgr)
 String colorBgrHex = CustomKeywords.'FinalKeywords.convertRGBStringToHex'(rgbBrgColor)
 String realBgr = '#0d5cb6'
 WebUI.verifyMatch(colorBgrHex, realBgr, true)
+
