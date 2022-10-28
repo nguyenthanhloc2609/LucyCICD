@@ -21,7 +21,10 @@ pool:
   
 
 steps: 
-
+- script: docker pull katalonstudio/katalon
+  displayName: 'Pull katalon studio images'
+- script: docker run -t --rm -v "$(pwd)":/katalon/katalon/source katalonstudio/katalon katalon-execute.sh -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"
+  displayName: 'Runnning Katalon TS_RegressionTest'
 - task: PowerShell@2 
 
   inputs: 
@@ -53,12 +56,3 @@ steps:
     ArtifactName: 'source' 
 
     publishLocation: 'Container' 
-- task: Gradle@3
-  inputs:
-    gradleWrapperFile: 'gradlew'
-    tasks: 'build'
-    publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
-    javaHomeOption: 'JDKVersion'
-    sonarQubeRunAnalysis: false
-    spotBugsAnalysis: false
