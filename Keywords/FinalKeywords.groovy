@@ -28,6 +28,7 @@ public class FinalKeywords {
 		int hexValue2=Integer.parseInt(hexValue[1])
 		hexValue[2] = hexValue[2].trim()
 		int hexValue3=Integer.parseInt(hexValue[2])
+		println(a)
 		String hexColor = String.format("#%02x%02x%02x", hexValue1, hexValue2, hexValue3)
 		return hexColor
 	}
